@@ -1,0 +1,37 @@
+Commands:
+git status
+git add filename
+git commit -m “Reason/Explanation"
+git log
+git show HEAD #Last commit
+git checkout HEAD filename #Discards changes in the working directory.
+git reset HEAD scene-2.txt # Unstages file changes in the staging area.
+git reset [First 7 digits of the commit_RSA] #Resets staging and sets HEAD to input RSA
+git brach # check what branch are you on
+git brach fencing #Creates the branch
+git checkout fencing#Switches the branch
+git checkout master && git merge fencing #Merges branches
+git branch -d fencing #Delete branch
+git clone remote_location clone_name #Clone remote location
+git fetch #Check if project is up to date
+git merge origin/master #Merge master with fetch
+git push origin bio-questions #Push branch to master
+
+git remote -v to list the remotes.
+
+#####################################################################
+git checkout production && git pull &&  git cherry-pick master  && git push origin production
+#####################################################################
+
+#Create and checkout branch test
+git checkout -b test
+
+#Sign deploy
+git tag -s -m "<message>" <tag name signed> <original tag> if you have the key setup in ~/.gitconfig
+git push origin <tag name signed>
+
+###
+Show tag history and commit message
+git log --no-walk --tags --pretty="%h %d %s" --decorate=full
+rvx_prod = RVX-FRONTEND
+
